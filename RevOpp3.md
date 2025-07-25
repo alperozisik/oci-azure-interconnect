@@ -2,16 +2,16 @@
 
 ## Storyboard
 
-A global enterprise has its customer-facing or business-critical applications running on Microsoft Azure (using services such as Azure App Service, AKS, or Virtual Machines). These applications require robust, high-performance, and highly available Oracle database services—which are provisioned on Oracle Cloud Infrastructure (OCI). 
+## Storyboard
 
-The application tier on Azure connects directly to the database tier on OCI over a secure, dedicated, low-latency Interconnect (Azure ExpressRoute + OCI FastConnect). This "split stack" architecture allows organizations to take advantage of best-in-class Azure application development, scalability, and user experience, while leveraging Oracle's industry-leading database technologies (such as Autonomous Database, Exadata, or RAC) on OCI.
+A global enterprise has its customer-facing or business-critical applications running on Microsoft Azure (using services such as Azure App Service, AKS, or Virtual Machines). These applications require robust, high-performance, and highly available Oracle database services provisioned on Oracle Cloud Infrastructure (OCI). The application tier on Azure connects directly to the database tier on OCI over a secure, dedicated, low-latency Interconnect (Azure ExpressRoute + OCI FastConnect). This "split stack" architecture leverages best-in-class Azure application development and user experience, while benefiting from Oracle's database technologies on OCI.
 
-**Typical Use Cases:**
+## Typical Use Cases
 - Modern web or mobile apps on Azure, with Oracle DB backend on OCI
 - Large-scale business applications or custom middleware requiring Oracle DB features not available natively on Azure
 - Seamless lift-and-shift or modernization projects where applications migrate to Azure, but databases remain (or are upgraded) on OCI
 
-**Key business outcomes:**
+## Key Business Outcomes
 - Best of both clouds: Azure for application innovation, OCI for database performance & compliance
 - Consistent low-latency connectivity (ExpressRoute + FastConnect)
 - Simplified migration path for enterprise apps
@@ -51,16 +51,18 @@ The application tier on Azure connects directly to the database tier on OCI over
 
 ## BOM Table
 
-| Service                        | Paid to    | SKU/Service Name        | Qty   | Monthly Price (USD) | Annual Price (USD) | Notes                    |
-|--------------------------------|------------|-------------------------|-------|---------------------|---------------------|--------------------------|
-| Azure App Service              | Azure      | P3v3                    | 1     | $618                | $7,416              | Microsoft Azure          |
-| ExpressRoute Circuit           | Azure      | Standard Circuit        | 2     | $2,000              | $24,000             | Microsoft Azure          |
-| Virtual Network Gateway        | Azure      | ErGw3AZ                 | 1     | $276                | $3,312              | Microsoft Azure          |
-| FastConnect Circuit            | OCI        | FastConnect Port        | 2     | $632.40             | $7,588.80           | Oracle Cloud Infrastructure |
-| Autonomous Database            | OCI        | 8 peak/3 base ECPU, 1TB + 3TB backup, autoscaling enabled | 1     | $1,130.77           | $13,569.24           | 8 peak/3 base ECPU, 1TB + 3TB backup, autoscaling enabled |
-| Data Transfer (Egress)         | Azure/OCI  | Outbound Data Transfer  | -     | $80                 | $960                | Azure egress, example    |
-| Managed Integration Service    | Partner    | Integration Service     | -     | $300                | $3,600              | Paid to Partner          |
-| **Total**                     |            |                         |       | **$5,037.17**       | **$60,446.04**      |                          |
+| Service                     | Paid to    | SKU/Service Name        | Qty   | Monthly Price (USD) | Annual Price (USD) | Notes                    |
+|-----------------------------|------------|-------------------------|-------|---------------------|---------------------|--------------------------|
+| Azure App Service           | Azure      | P3v3                    | 1     | $618                | $7,416              | Microsoft Azure          |
+| ExpressRoute Circuit        | Azure      | Standard Circuit        | 2     | $2,000              | $24,000             | Microsoft Azure          |
+| Virtual Network Gateway     | Azure      | ErGw3AZ                 | 1     | $276                | $3,312              | Microsoft Azure          |
+| FastConnect Circuit         | OCI        | FastConnect Port        | 2     | $632.40             | $7,588.80           | Oracle Cloud Infrastructure |
+| Autonomous Database         | OCI        | 8 peak/3 base ECPU, 1TB + 3TB backup, autoscaling enabled | 1     | $1,130.77           | $13,569.24           | Oracle Cloud Infrastructure |
+| Data Transfer (Egress)      | Azure/OCI  | Outbound Data Transfer  | -     | $80                 | $960                | Example, see note        |
+| Managed Integration Service | Partner    | Integration Service     | -     | $300                | $3,600              | Paid to Partner          |
+| **Total**                   |            |                         |       | **$5,037.17**       | **$60,446.04**      |                          |
+
+*Data Transfer/Egress: Outbound data transfer is billed by the originating cloud provider. Example shown; actual costs depend on usage and direction.*
 
 ---
 
@@ -80,10 +82,10 @@ The application tier on Azure connects directly to the database tier on OCI over
 
 ## Who Gets Paid for What?
 
-| Institution         | Example Services Paid For         | Sample Total (Monthly USD) |
-|---------------------|-----------------------------------|----------------------------|
+| Institution         | Example Services Paid For                    | Sample Total (Monthly USD) |
+|---------------------|----------------------------------------------|----------------------------|
 | Azure               | App Service, ExpressRoute, Gateway, Data Transfer | $2,974           |
 | OCI                 | FastConnect, Autonomous DB, Data Transfer         | $1,763.17        |
 | Partner             | Managed Integration/Support Service               | $300             |
 
-*Sample totals shown above are for illustration only and will vary based on configuration, usage, and data transfer volume.*
+*Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*

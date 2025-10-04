@@ -56,14 +56,14 @@ A global enterprise runs its core business applications on Microsoft Azure while
 
 | Service                     | Paid to    | SKU/Service Name          | Qty   | Monthly Price (USD) | Annual Price (USD) | Notes                         |
 |-----------------------------|------------|---------------------------|-------|---------------------|---------------------|-------------------------------|
-| ExpressRoute Circuit        | Azure      | Standard Circuit          | 2     | $1,000              | $12,000             | Microsoft Azure               |
+| ExpressRoute Circuit        | Azure      | Standard Circuit          | 2     | $1,000              | $24,000             | Microsoft Azure               |
 | ExpressRoute Premium (Opt.) | Azure      | Premium Add-on            | 1     | $300                | $3,600              | Microsoft Azure               |
 | Virtual Network Gateway     | Azure      | ErGw3AZ                   | 1     | $276                | $3,312              | Microsoft Azure               |
-| FastConnect Circuit         | OCI        | FastConnect Port          | 2     | $316.20             | $3,794.40           | Oracle Cloud Infrastructure   |
+| FastConnect Circuit         | OCI        | FastConnect Port          | 2     | $316.20             | $7,588.80           | Oracle Cloud Infrastructure   |
 | DRG / VCN                   | OCI        | DRG, VCN                  | -     | Included            | Included            | Oracle Cloud Infrastructure   |
 | Data Transfer (Egress)      | Azure/OCI  | Outbound Data Transfer    | -     | $150                | $1,800              | Example, see note             |
 | Managed Network Service     | Partner    | Managed Network Service   | -     | $300                | $3,600              | Paid to Partner               |
-| **Total**                   |            |                           |       | **$2,342.20**       | **$28,106.40**      |                               |
+| **Total**                   |            |                           |       | **$3,658.40**       | **$43,900.80**      |                               |
 
 *Data Transfer/Egress: Outbound data transfer is billed by the originating cloud provider. Example shown; actual costs depend on usage and direction.*
 
@@ -89,7 +89,7 @@ A global enterprise runs its core business applications on Microsoft Azure while
 
 | Institution         | Example Services Paid For                    | Sample Total (Monthly USD) |
 |---------------------|----------------------------------------------|----------------------------|
-| Azure               | ExpressRoute, Premium, Gateway, Data Transfer| $1,876                     |
+| Azure               | ExpressRoute, Premium, Gateway, Data Transfer| $2,726                     |
 | OCI                 | FastConnect, Data Transfer, VCN/DRG         | $632.40                    |
 | Partner             | Managed Network Service                      | $300                       |
 

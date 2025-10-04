@@ -2,8 +2,6 @@
 
 ## Storyboard
 
-## Storyboard
-
 A modern enterprise runs its business applications and data pipelines on Azure, but leverages Oracle Cloud Infrastructure (OCI) MySQL HeatWave for high-performance, real-time analytics. Since HeatWave is not available on Azure, analytics workloads and advanced MySQL operations are performed entirely in OCI. Data flows securely and efficiently between Azure and OCI using the dedicated Interconnect (Azure ExpressRoute + OCI FastConnect).
 
 ## Typical Use Cases

@@ -2,8 +2,6 @@
 
 ## Storyboard
 
-## Storyboard
-
 A global enterprise has its customer-facing or business-critical applications running on Microsoft Azure (using services such as Azure App Service, AKS, or Virtual Machines). These applications require robust, high-performance, and highly available Oracle database services provisioned on Oracle Cloud Infrastructure (OCI). The application tier on Azure connects directly to the database tier on OCI over a secure, dedicated, low-latency Interconnect (Azure ExpressRoute + OCI FastConnect). This "split stack" architecture leverages best-in-class Azure application development and user experience, while benefiting from Oracle's database technologies on OCI.
 
 ## Typical Use Cases

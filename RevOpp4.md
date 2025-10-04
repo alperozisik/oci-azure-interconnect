@@ -2,8 +2,6 @@
 
 ## Storyboard
 
-## Storyboard
-
 A large enterprise runs its core Oracle E-Business Suite (EBS) environment on OCI, taking advantage of high performance, security, and Oracle-native support. At the same time, the organization needs to unify, replicate, and synchronize EBS and other business data across Azure for use with Microsoft analytics, AI, and reporting platforms (such as Power BI or Azure Synapse). Distributed workloads require robust, high-speed, and secure inter-cloud data movement. Azure-OCI Interconnect (ExpressRoute + FastConnect) enables seamless, secure sharing of data between OCI (hosting EBS and Oracle DBs) and Azure (hosting analytics, reporting, or SaaS extensions), supporting multi-cloud data lakes, unified governance, and integrated analytics.
 
 ## Typical Use Cases

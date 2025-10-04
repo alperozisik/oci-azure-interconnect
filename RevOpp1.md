@@ -2,8 +2,6 @@
 
 ## Storyboard
 
-## Storyboard
-
 A global enterprise runs its core business applications on Microsoft Azure while hosting critical Oracle databases and analytics workloads on Oracle Cloud Infrastructure (OCI). To ensure seamless and secure data exchange—such as live transaction processing, data warehousing, and real-time analytics—between Azure and OCI, the customer implements a dedicated, high-throughput Interconnect leveraging Azure ExpressRoute and OCI FastConnect. The architecture uses redundant ExpressRoute circuits for high availability, guaranteeing low-latency, high-bandwidth, and highly available connections between cloud environments. Continuous data transfer and integration between environments drive up network bandwidth consumption, resulting in greater recurring revenue from network services.
 
 ## Typical Use Cases

@@ -2,8 +2,6 @@
 
 ## Storyboard
 
-## Storyboard
-
 A multinational enterprise operates mission-critical workloads on Microsoft Azure. To ensure business continuity and meet compliance or regulatory requirements, the company implements a cross-cloud disaster recovery (DR) strategy: Azure is the primary production environment, while Oracle Cloud Infrastructure (OCI) serves as the DR site. All mission-critical data, applications, and backups are replicated from Azure to OCI using Interconnect (ExpressRoute + FastConnect). In case of a disaster, workloads fail over to OCI—where pre-provisioned compute, storage, and database resources are available for rapid recovery. This architecture leverages both clouds' strengths and unlocks new DR options beyond single-vendor approaches.
 
 ## Typical Use Cases

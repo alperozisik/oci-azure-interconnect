@@ -93,4 +93,6 @@ A global enterprise runs its core business applications on Microsoft Azure while
 | OCI                 | FastConnect, Data Transfer, VCN/DRG         | $632.40                    |
 | Partner             | Managed Network Service                      | $300                       |
 
+**Total: $3,658.40**
+
 *Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*

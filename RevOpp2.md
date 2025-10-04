@@ -104,4 +104,6 @@ OCI’s RDMA-enabled GPU clusters deliver up to 3x faster AI/ML training and inf
 | Partner     | Managed Data Integration/Analytics Service | $500 |
 | **Total**   |                           | **$20,910.63** |
 
+**Total: $20,910.63**
+
 *Sample totals above illustrate the hybrid environment and will vary based on configuration, usage, and data transfer volume.*

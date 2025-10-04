@@ -97,6 +97,6 @@ A large enterprise runs its core Oracle E-Business Suite (EBS) environment on OC
 | OCI                 | FastConnect, EBS Compute, Oracle Database, Object Storage, Load Balancer | $7,361.63        |
 | Partner             | Managed Data Integration/Support Service     | $500                       |
 
-*Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*
-
 **Total: $13,441.63**
+
+*Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*

@@ -87,6 +87,6 @@ A global enterprise has its customer-facing or business-critical applications ru
 | OCI                 | FastConnect, Autonomous DB, Data Transfer         | $1,763.17        |
 | Partner             | Managed Integration/Support Service               | $300             |
 
-*Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*
-
 **Total: $7,037.17**
+
+*Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*

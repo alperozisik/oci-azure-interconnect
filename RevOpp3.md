@@ -14,6 +14,7 @@ A global enterprise has its customer-facing or business-critical applications ru
 - Consistent low-latency connectivity (ExpressRoute + FastConnect)
 - Simplified migration path for enterprise apps
 - Increased network, database, and managed service consumption
+- Proven performance improvements of 3–4x in similar split-stack deployments
 
 ---
 

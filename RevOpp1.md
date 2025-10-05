@@ -39,10 +39,10 @@ A global enterprise runs its core business applications on Microsoft Azure while
 
 | Component                     | SKU/Service Name        | Usage Assumption         | Monthly Price (Estimate) |
 |-------------------------------|-------------------------|--------------------------|--------------------------|
-| Azure ExpressRoute (Standard) | Standard Circuit        | 1 Gbps, 2 circuits for HA| $1,000                   |
+| Azure ExpressRoute (Standard) | Standard Circuit        | 1 Gbps, 2 circuits for HA| $2,000                   |
 | ExpressRoute Premium Add-on   | Premium                 | (Optional, for global reach) | $300                 |
 | Azure Virtual Network Gateway | ErGw3AZ                 | 1 per region             | $276                     |
-| OCI FastConnect               | FastConnect Direct      | 1 Gbps, 2 connections for HA | $316.20               |
+| OCI FastConnect               | FastConnect Direct      | 1 Gbps, 2 connections for HA | $632.40               |
 | OCI Dynamic Routing Gateway   | DRG                     | 1 per VCN                | Included                 |
 | OCI VCN                       | VCN                     | 1 per region             | Included                 |
 | Data Transfer (Egress)        | Azure & OCI             | 10TB/month bi-directional| $150 (Azure side)        |
@@ -56,10 +56,10 @@ A global enterprise runs its core business applications on Microsoft Azure while
 
 | Service                     | Paid to    | SKU/Service Name          | Qty   | Monthly Price (USD) | Annual Price (USD) | Notes                         |
 |-----------------------------|------------|---------------------------|-------|---------------------|---------------------|-------------------------------|
-| ExpressRoute Circuit        | Azure      | Standard Circuit          | 2     | $1,000              | $24,000             | Microsoft Azure               |
+| ExpressRoute Circuit        | Azure      | Standard Circuit          | 2     | $2,000              | $24,000             | Microsoft Azure               |
 | ExpressRoute Premium (Opt.) | Azure      | Premium Add-on            | 1     | $300                | $3,600              | Microsoft Azure               |
 | Virtual Network Gateway     | Azure      | ErGw3AZ                   | 1     | $276                | $3,312              | Microsoft Azure               |
-| FastConnect Circuit         | OCI        | FastConnect Port          | 2     | $316.20             | $7,588.80           | Oracle Cloud Infrastructure   |
+| FastConnect Circuit         | OCI        | FastConnect Port          | 2     | $632.40             | $7,588.80           | Oracle Cloud Infrastructure   |
 | DRG / VCN                   | OCI        | DRG, VCN                  | -     | Included            | Included            | Oracle Cloud Infrastructure   |
 | Data Transfer (Egress)      | Azure/OCI  | Outbound Data Transfer    | -     | $150                | $1,800              | Example, see note             |
 | Managed Network Service     | Partner    | Managed Network Service   | -     | $300                | $3,600              | Paid to Partner               |

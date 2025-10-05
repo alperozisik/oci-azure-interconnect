@@ -42,12 +42,13 @@ A modern enterprise runs its business applications and data pipelines on Azure, 
 | Azure Blob Storage                       | 2TB, geo-replicated                     | Data + DR storage             | $250                     |
 | Azure Data Factory                       | Standard                                | Optional, data transfer       | $100                     |
 | Azure Site Recovery                      | Standard Protection                     | DR for App Tier               | $240                     |
-| ExpressRoute Circuit                     | Standard Circuit (1 Gbps)               | 2 for HA                      | $948.90                  |
+| ExpressRoute Circuit                     | Standard Circuit (1 Gbps)               | 2 for HA                      | $2,000                |
 | MySQL HeatWave Service                   | MySQL HeatWave                          | 32 OCPU, 512GB RAM (sample)   | $2,634.61                |
 | Object Storage                           | OCI Object Storage (500 GB)             | Backups/staging               | $12.50                   |
-| FastConnect Circuit                      | FastConnect Direct (1 Gbps)             | 2 for HA                      | $632.40                  |
+| FastConnect Circuit                      | FastConnect Direct (1 Gbps)             | 2 for HA                      | $1,264.80                |
 | MySQL HeatWave Cross-Region Replica      | HeatWave Cross-Region Replica           | DR in 2nd region              | $1,900                   |
 | Object Storage Cross-Region Replication  | Object Storage Replication (500 GB)     | Backup DR                     | $75                      |
+| Managed MySQL/HeatWave Ops (Partner)     | Managed Operations & Integration        | Monthly retainer              | $500                     |
 
 ---
 
@@ -59,13 +60,14 @@ A modern enterprise runs its business applications and data pipelines on Azure, 
 | Azure Blob Storage                   | Azure      | 2TB, geo-replicated           | 1     | $250                | $3,000              | Microsoft Azure, DR enabled        |
 | Azure Data Factory                   | Azure      | Standard                      | 1     | $100                | $1,200              | Microsoft Azure, optional          |
 | Azure Site Recovery                  | Azure      | Standard Protection           | 1     | $240                | $2,880              | Microsoft Azure, App Tier DR       |
-| ExpressRoute Circuit                 | Azure      | Standard Circuit (1 Gbps)     | 2     | $948.90             | $11,386.80          | Microsoft Azure, Interconnect (HA) |
+| ExpressRoute Circuit                 | Azure      | Standard Circuit (1 Gbps)     | 2     | $2,000           | $24,000          | Microsoft Azure, Interconnect (HA) |
 | MySQL HeatWave Service               | OCI        | MySQL HeatWave                | 1     | $2,634.61           | $31,975.32          | Oracle Cloud Infrastructure        |
 | OCI Object Storage                   | OCI        | 500 GB                        | 1     | $12.50              | $150                 | Oracle Cloud Infrastructure        |
-| FastConnect Circuit                  | OCI        | FastConnect Port (1 Gbps)     | 2     | $632.40             | $7,588.80            | Oracle Cloud Infrastructure (HA)   |
+| FastConnect Circuit                  | OCI        | FastConnect Port (1 Gbps)     | 2     | $1,264.80           | $15,177.60            | Oracle Cloud Infrastructure (HA)   |
 | MySQL HeatWave Cross-Region Replica  | OCI        | Cross-Region Replica          | 1     | $1,900              | $22,800              | DR in 2nd OCI region               |
 | OCI Object Storage Cross-Region Replication | OCI   | Replication (500 GB)          | 1     | $75                 | $900                 | DR for backups                     |
-| **Total**                            |            |                               |       | **$7,693.41**       | **$92,320.92**      |                                    |
+| Managed HeatWave Ops                 | Partner    | Managed Operations & Integration | -     | $500                | $6,000              | Paid to Partner                     |
+| **Total**                            |            |                               |       | **$9,876.91**       | **$118,522.92**      |                                    |
 
 *Data Transfer/Egress: Outbound data transfer is billed by the originating cloud provider. Example shown; actual costs depend on usage and direction.*
 
@@ -89,7 +91,10 @@ A modern enterprise runs its business applications and data pipelines on Azure, 
 
 | Institution         | Example Services Paid For                    | Sample Total (Monthly USD) |
 |---------------------|----------------------------------------------|----------------------------|
-| Azure               | App Service, Blob Storage, Data Factory, Site Recovery, ExpressRoute | $2,438.90                  |
-| OCI                 | MySQL HeatWave, Object Storage, FastConnect, Cross-Region Replica, Replication | $5,254.51                  |
+| Azure               | App Service, Blob Storage, Data Factory, Site Recovery, ExpressRoute | $3,490                  |
+| OCI                 | MySQL HeatWave, Object Storage, FastConnect, Cross-Region Replica, Replication | $5,886.91                  |
+| Partner             | Managed MySQL/HeatWave Operations                     | $500                       |
+
+**Total: $9,876.91**
 
 *Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*

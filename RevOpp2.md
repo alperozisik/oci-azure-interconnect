@@ -46,7 +46,7 @@ OCI’s RDMA-enabled GPU clusters deliver up to 3x faster AI/ML training and inf
 | Component                        | SKU/Service Name           | Usage Assumption                  | Monthly Price (Estimate) |
 |---------------------------------|----------------------------|---------------------------------|--------------------------|
 | Azure Synapse Analytics           | DWU100c (1000 DWU)         | 1 instance, 730 hours           | $1,512                   |
-| Azure ExpressRoute (Standard)     | Standard Circuit           | 1 Gbps, 2 circuits for HA      | $800                    |
+| Azure ExpressRoute (Standard)     | Standard Circuit           | 1 Gbps, 2 circuits for HA      | $2,000                  |
 | ExpressRoute Premium Add-on       | Premium                    | (if multi-region)               | $300                     |
 | Azure Virtual Network Gateway     | ErGw3AZ                   | 1 per region                    | $276                     |
 | Azure Data Lake Storage           | 10TB (Hot), LRS            | 10TB stored                    | $204                     |
@@ -64,17 +64,17 @@ OCI’s RDMA-enabled GPU clusters deliver up to 3x faster AI/ML training and inf
 | Service                     | Paid to    | SKU/Service Name          | Qty   | Monthly Price (USD) | Annual Price (USD) | Notes                                         |
 |-----------------------------|------------|---------------------------|-------|---------------------|---------------------|-----------------------------------------------|
 | Azure Synapse Analytics     | Azure      | DWU100c                   | 1     | $1,512              | $18,144             | Primary analytics platform on Azure           |
-| ExpressRoute Circuit        | Azure      | 1 Gbps Circuit            | 2     | $800                | $9,600              | Azure connectivity for hybrid cloud integration |
+| ExpressRoute Circuit        | Azure      | 1 Gbps Circuit            | 2     | $2,000              | $24,000             | Azure connectivity for hybrid cloud integration |
 | ExpressRoute Premium (Opt.) | Azure      | Premium Add-on            | 1     | $300                | $3,600              | Optional for multi-region connectivity         |
 | Virtual Network Gateway     | Azure      | ErGw3AZ                   | 1     | $276                | $3,312              | Supports secure Azure network gateway          |
 | Data Lake Storage           | Azure      | 10TB                      | 1     | $204                | $2,448              | Azure storage for primary analytics data       |
-| FastConnect Circuit         | OCI        | FastConnect 1 Gbps        | 2     | $202.74            | $2,432.88           | High-speed OCI connectivity for hybrid setup   |
+| FastConnect Circuit         | OCI        | FastConnect 1 Gbps        | 2     | $405.48            | $4,865.76           | High-speed OCI connectivity for hybrid setup   |
 | Autonomous Data Warehouse   | OCI        | 1 OCPU, 10TB storage + 30TB backup | 1     | $1,780.62           | $21,367.44          | Hosts data and accelerates analytics workloads |
 | OCI GPU Compute Cluster     | OCI        | BM.GPU.A100.8 (RDMA-enabled) | 1     | $14,000             | $168,000            | Accelerates OCI-based AI/ML training and inference |
 | OCI Object Storage          | OCI        | 7.168TB                   | 1     | $182.53             | $2,190.36           | OCI storage supporting hybrid data workflows   |
 | Data Transfer (Egress)      | Azure/OCI  | Outbound Data Transfer    | -     | $150                | $1,800              | Bi-directional data transfer via Interconnect  |
 | Managed Data Integration    | Partner    | Integration Service       | -     | $500                | $6,000              | Partner services for hybrid integration and automation |
-| **Total**                   |            |                           |       | **$20,910.63**      | **$250,927.56**     |                                               |                                               |
+| **Total**                   |            |                           |       | **$21,310.63**      | **$255,727.56**     |                                               |                                               |
 
 *Data Transfer/Egress: Outbound data transfer is billed by the originating cloud provider. Actual costs depend on usage and data flow direction.*
 
@@ -99,11 +99,10 @@ OCI’s RDMA-enabled GPU clusters deliver up to 3x faster AI/ML training and inf
 
 | Institution | Example Services Paid For | Sample Total (Monthly USD) |
 |-------------|---------------------------|-----------------------------|
-| Azure       | Synapse Analytics, ExpressRoute (Standard & Premium), Virtual Network Gateway, Data Lake Storage, Data Transfer | $4,042 |
+| Azure       | Synapse Analytics, ExpressRoute (Standard & Premium), Virtual Network Gateway, Data Lake Storage, Data Transfer | $4,442 |
 | OCI         | FastConnect, Autonomous Data Warehouse, Object Storage, GPU Compute Cluster | $16,368.63 |
 | Partner     | Managed Data Integration/Analytics Service | $500 |
-| **Total**   |                           | **$20,910.63** |
 
-**Total: $20,910.63**
+**Total: $21,310.63**
 
 *Sample totals above illustrate the hybrid environment and will vary based on configuration, usage, and data transfer volume.*

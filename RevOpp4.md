@@ -41,10 +41,10 @@ A large enterprise runs its core Oracle E-Business Suite (EBS) environment on OC
 | Component                       | SKU/Service Name                | Usage Assumption                    | Monthly Price (Estimate) |
 |----------------------------------|---------------------------------|-------------------------------------|--------------------------|
 | Azure Data Factory               | Standard Pipeline               | 50,000 activities                   | $1,000                   |
-| Azure ExpressRoute (Standard)    | Standard Circuit                | 2 Gbps, 2 circuits for HA           | $2,000                   |
+| Azure ExpressRoute (Standard)    | Standard Circuit                | 2 Gbps, 2 circuits for HA           | $4,000                   |
 | Virtual Network Gateway          | ErGw3AZ                         | 1 per region                        | $276                     |
 | Azure Data Lake Storage          | 10TB (Hot), LRS                 | 10TB stored                         | $204                     |
-| FastConnect                      | FastConnect Direct              | 10 Gbps, 2 ports, HA                | $1,897.80                |
+| FastConnect                      | FastConnect Direct              | 10 Gbps, 2 ports, HA                | $3,795.60                |
 | EBS Compute (OCI)                | VM.Standard.E4.Flex, 16 OCPU    | 1 instance, 730 hours               | $700                     |
 | Oracle Database (OCI)            | 8 OCPU, 2TB storage             | 1 instance, 730 hours               | $1,400                   |
 | OCI Object Storage               | 50TB                            | 50TB stored                         | $1,250                   |
@@ -59,10 +59,10 @@ A large enterprise runs its core Oracle E-Business Suite (EBS) environment on OC
 | Service                     | Paid to    | SKU/Service Name        | Qty   | Monthly Price (USD) | Annual Price (USD) | Notes                       |
 |-----------------------------|------------|-------------------------|-------|---------------------|---------------------|-----------------------------|
 | Azure Data Factory          | Azure      | Standard Pipeline       | 1     | $1,000              | $12,000             | Microsoft Azure             |
-| ExpressRoute Circuit        | Azure      | Standard Circuit        | 2     | $2,000              | $48,000             | Microsoft Azure             |
+| ExpressRoute Circuit        | Azure      | Standard Circuit        | 2     | $4,000              | $48,000             | Microsoft Azure             |
 | Virtual Network Gateway     | Azure      | ErGw3AZ                 | 1     | $276                | $3,312              | Microsoft Azure             |
 | Data Lake Storage           | Azure      | 10TB                    | 1     | $204                | $2,448              | Microsoft Azure             |
-| FastConnect Circuit         | OCI        | 10 Gbps, 2 ports, HA    | 2     | $1,897.80           | $45,547.20          | Oracle Cloud Infrastructure |
+| FastConnect Circuit         | OCI        | 10 Gbps, 2 ports, HA    | 2     | $3,795.60           | $45,547.20          | Oracle Cloud Infrastructure |
 | EBS Compute                 | OCI        | VM.Standard.E4.Flex     | 1     | $700                | $8,400              | Oracle Cloud Infrastructure |
 | Oracle Database             | OCI        | 8 OCPU, 2TB storage     | 1     | $1,400              | $16,800             | Oracle Cloud Infrastructure |
 | OCI Object Storage          | OCI        | 50TB                    | 1     | $1,250              | $15,000             | Oracle Cloud Infrastructure |
@@ -93,8 +93,8 @@ A large enterprise runs its core Oracle E-Business Suite (EBS) environment on OC
 
 | Institution         | Example Services Paid For                    | Sample Total (Monthly USD) |
 |---------------------|----------------------------------------------|----------------------------|
-| Azure               | Data Factory, ExpressRoute, Virtual Network Gateway, Data Lake Storage, Data Transfer | $5,580           |
-| OCI                 | FastConnect, EBS Compute, Oracle Database, Object Storage, Load Balancer | $7,361.63        |
+| Azure               | Data Factory, ExpressRoute, Virtual Network Gateway, Data Lake Storage, Data Transfer | $5,630           |
+| OCI                 | FastConnect, EBS Compute, Oracle Database, Object Storage, Load Balancer | $7,311.63        |
 | Partner             | Managed Data Integration/Support Service     | $500                       |
 
 **Total: $13,441.63**

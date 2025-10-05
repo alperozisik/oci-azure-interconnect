@@ -53,13 +53,13 @@ A global enterprise has its customer-facing or business-critical applications ru
 | Service                     | Paid to    | SKU/Service Name        | Qty   | Monthly Price (USD) | Annual Price (USD) | Notes                    |
 |-----------------------------|------------|-------------------------|-------|---------------------|---------------------|--------------------------|
 | Azure App Service           | Azure      | P3v3                    | 1     | $618                | $7,416              | Microsoft Azure          |
-| ExpressRoute Circuit        | Azure      | Standard Circuit        | 2     | $2,000              | $48,000             | Microsoft Azure          |
+| ExpressRoute Circuit        | Azure      | Standard Circuit        | 2     | $2,000              | $24,000             | Microsoft Azure          |
 | Virtual Network Gateway     | Azure      | ErGw3AZ                 | 1     | $276                | $3,312              | Microsoft Azure          |
-| FastConnect Circuit         | OCI        | FastConnect Port        | 2     | $632.40             | $15,177.60           | Oracle Cloud Infrastructure |
+| FastConnect Circuit         | OCI        | FastConnect Port        | 2     | $632.40             | $7,588.80           | Oracle Cloud Infrastructure |
 | Autonomous Database         | OCI        | 8 peak/3 base ECPU, 1TB + 3TB backup, autoscaling enabled | 1     | $1,130.77           | $13,569.24           | Oracle Cloud Infrastructure |
 | Data Transfer (Egress)      | Azure/OCI  | Outbound Data Transfer  | -     | $80                 | $960                | Example, see note        |
 | Managed Integration Service | Partner    | Integration Service     | -     | $300                | $3,600              | Paid to Partner          |
-| **Total**                   |            |                         |       | **$7,037.17**       | **$84,446.04**      |                          |
+| **Total**                   |            |                         |       | **$5,037.17**       | **$60,446.04**      |                          |
 
 *Data Transfer/Egress: Outbound data transfer is billed by the originating cloud provider. Example shown; actual costs depend on usage and direction.*
 
@@ -83,10 +83,10 @@ A global enterprise has its customer-facing or business-critical applications ru
 
 | Institution         | Example Services Paid For                    | Sample Total (Monthly USD) |
 |---------------------|----------------------------------------------|----------------------------|
-| Azure               | App Service, ExpressRoute, Gateway, Data Transfer | $4,974           |
+| Azure               | App Service, ExpressRoute, Gateway, Data Transfer | $2,974           |
 | OCI                 | FastConnect, Autonomous DB, Data Transfer         | $1,763.17        |
 | Partner             | Managed Integration/Support Service               | $300             |
 
-**Total: $7,037.17**
+**Total: $5,037.17**
 
 *Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*

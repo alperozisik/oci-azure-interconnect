@@ -42,9 +42,9 @@ A multinational enterprise operates mission-critical workloads on Microsoft Azur
 |---------------------------------|------------------------------|-------------------------------------|--------------------------|
 | Azure Site Recovery               | Standard Protection          | 40 protected instances (DR workloads, no DB on Azure)  | $480                     |
 | Azure Blob Storage                | 20TB (Hot), LRS             | 20TB stored (2 regions)              | $408                     |
-| ExpressRoute Circuit              | Standard Circuit, 2Gbps      | 4 for HA (2 regions, 2 each)         | $4,000                   |
+| ExpressRoute Circuit              | Standard Circuit, 2Gbps      | 4 for HA (2 regions, 2 each)         | $8,000                   |
 | Virtual Network Gateway           | ErGw3AZ                      | 2 per region (4 total)                | $552                     |
-| OCI FastConnect                   | 10 Gbps, 4 ports            | 4 ports, HA (2 regions)               | $3,794.40                |
+| OCI FastConnect                   | 10 Gbps, 4 ports            | 4 ports, HA (2 regions)               | $7,591.20                |
 | OCI Compute (DR standby)          | VM.Standard.E4.Flex, 8 OCPU  | 2 instances, 730 hours (standby)     | $349.21                  |
 | OCI Compute (App Tier)            | VM.Standard.E4.Flex, 8 OCPU  | 4 instances                         | $1,181.34                |
 | Oracle Database (Autonomous)      | 2 peak (örnek)              | 2 instances, autoscaling, cross-region peer | $2,016                   |
@@ -61,9 +61,9 @@ A multinational enterprise operates mission-critical workloads on Microsoft Azur
 |-----------------------------|------------|----------------------------|-------|---------------------|---------------------|----------------------------------------------|
 | Azure Site Recovery         | Azure      | Standard Protection        | 40    | $480                | $5,760              | Multi-region, cross-cloud DR workloads       |
 | Blob Storage                | Azure      | 20TB                       | 2     | $408                | $4,896              | Multi-region, cross-cloud replication enabled|
-| ExpressRoute Circuit        | Azure      | Standard Circuit, 2Gbps    | 4     | $4,000              | $48,000             | Multi-region, 4 connections total            |
+| ExpressRoute Circuit        | Azure      | Standard Circuit, 2Gbps    | 4     | $8,000              | $96,000             | Multi-region, 4 connections total            |
 | Virtual Network Gateway     | Azure      | ErGw3AZ                    | 2     | $552                | $6,624              | Multi-region, cross-cloud connectivity       |
-| FastConnect Circuit         | OCI        | 10Gbps, 4 ports            | 4     | $3,794.40           | $45,532.80          | Multi-region, 4 connections total            |
+| FastConnect Circuit         | OCI        | 10Gbps, 4 ports            | 4     | $7,591.20           | $91,094.40          | Multi-region, 4 connections total            |
 | Compute (DR Standby)        | OCI        | VM.Standard.E4.Flex, 8 OCPU| 2     | $349.21             | $4,190.52           | Multi-region, cross-region replication       |
 | Compute (App Tier)          | OCI        | VM.Standard.E4.Flex, 8 OCPU| 4     | $1,181.34           | $14,176.08          | Application tier compute                     |
 | Oracle Database (Autonomous)| OCI        | 2 peak                     | 2     | $2,016              | $24,192             | Primary DB in OCI with cross-region peer     |
@@ -71,7 +71,9 @@ A multinational enterprise operates mission-critical workloads on Microsoft Azur
 | Block Volume                | OCI        | Standard Block Volume      | 2     | $243.72             | $2,924.64           | Storage attached to compute instances        |
 | Data Transfer (Egress)      | Azure/OCI  | Outbound Data Transfer     | -     | $300                | $3,600              | Example, see note                           |
 | Managed DR Service          | Partner    | DR Automation/Monitoring   | -     | $400                | $4,800              | Paid to Partner                              |
-| **Total**                   |            |                            |       | **$14,839.66**      | **$178,075.40**     |                                              |
+| **Total**                   |            |                            |       | **$22,045.46**      | **$264,545.52**     |                                              |
+
+**Total: $22,045.46**
 
 *Data Transfer/Egress: Outbound data transfer is billed by the originating cloud provider. Example shown; actual costs depend on usage and direction.*
 
@@ -95,8 +97,10 @@ A multinational enterprise operates mission-critical workloads on Microsoft Azur
 
 | Institution         | Example Services Paid For                    | Sample Total (Monthly USD) |
 |---------------------|----------------------------------------------|----------------------------|
-| Azure               | Site Recovery, Blob Storage, ExpressRoute, Virtual Network Gateway, Data Transfer | $5,740           |
-| OCI                 | FastConnect, Compute, Autonomous DB, Object Storage, Block Volume, Data Transfer  | $8,408.66        |
+| Azure               | Site Recovery, Blob Storage, ExpressRoute, Virtual Network Gateway, Data Transfer | $9,740           |
+| OCI                 | FastConnect, Compute, Autonomous DB, Object Storage, Block Volume, Data Transfer  | $11,905.46        |
 | Partner             | Managed DR Orchestration/Monitoring Service  | $400                       |
+
+**Total: $22,045.46**
 
 *Sample totals above are for illustration and will vary based on configuration, usage, and data transfer volume.*
